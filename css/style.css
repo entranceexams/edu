@@ -1,0 +1,46 @@
+.carousel-caption {
+	bottom: 180px;
+}
+.navbar .navbar-nav .nav-link:hover {
+	color: #ffffff;
+}
+.navbar .navbar-nav .nav-link {
+	position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #ffffff;
+	color: transparent;
+	width: 0%;
+	content: '';
+	height: 3px;
+	transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+	width: 100%;
+}
+@media(min-width:992px) {
+	.navbar-expand-lg .navbar-collapse {
+		width: 100%;
+	}
+}
+.geeks {
+	width: 100%;
+	transition: 0.15s all ease-in-out;
+	position: relative;
+}
+.geeks:hover {
+	transform: scale(1.1);
+	background: rgba(0, 0, 0, 0.25);
+	opacity: 0.8;
+}
+.text-underline-hover {
+	text-decoration: none;
+}
+.text-underline-hover:hover {
+	text-decoration: underline;
+}
